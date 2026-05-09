@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Quest Games</title>
+  <link rel="icon" type="image/icon" href="assets/logo9.png ">
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div class="page-bg"></div>
+
+<header class="header">
+  <nav class="navbar">
+    <a href="./index.html" class="logo">
+      
+        <div class="logo-text">
+    <strong>Quest</strong>
+    <span>Games</span>
+  </div>
+</a>
+    <ul class="nav-links">
+      <li><a href="#trending" data-i18n="nav.trending">Trending</a></li>
+      <li><a href="#explore" data-i18n="nav.explore">Explore</a></li>
+      <li><a href="./favorites.html" data-i18n="nav.favorites">Favorites</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="language-switcher">
+        <button data-lang="en">EN</button>
+        <button data-lang="pt-BR">PT</button>
+      </div>
+      <a href="#explore" class="nav-button" data-i18n="nav.button">
+        Explore Now
+      </a>
+    </div>
+  </nav>
+</header>
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span
+          class="eyebrow"
+          data-i18n="hero.eyebrow"
+        >
+          Gaming Discovery Platform
+        </span>
+        <h1 data-i18n="hero.title">
+          Discover new worlds before everyone else.
+        </h1>
+        <p data-i18n="hero.description">
+          Explore trending games, hidden gems, screenshots,
+          ratings and your personal favorites in one cinematic experience.
+        </p>
+        <div class="hero-actions">
+          <a
+            href="#explore"
+            class="primary-button"
+            data-i18n="hero.primaryButton"
+          >
+            Start Exploring
+          </a>
+          <a
+            href="#trending"
+            class="secondary-button"
+            data-i18n="hero.secondaryButton"
+          >
+            View Trending
+          </a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="hero-card-overlay"></div>
+        <div class="hero-card-content">
+          <span data-i18n="featured.label">
+            Featured Game
+          </span>
+          <h2>Cyberpunk 2077</h2>
+          <p data-i18n="featured.genre">
+            Open-world RPG • Action • Sci-fi
+          </p>
+          <div class="hero-stats">
+            <div>
+              <strong>4.5</strong>
+              <span data-i18n="featured.rating">
+                Rating
+              </span>
+            </div>
+            <div>
+              <strong>92%</strong>
+              <span data-i18n="featured.players">
+                Players
+              </span>
+            </div>
+            <div>
+              <strong>PC</strong>
+              <span data-i18n="featured.platform">
+                Platform
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="search-section" id="explore">
+      <div class="section-header">
+        <div>
+          <span
+            class="eyebrow"
+            data-i18n="search.eyebrow"
+          >
+            Explore
+          </span>
+          <h2 data-i18n="search.title">
+            Find your next game
+          </h2>
+        </div>
+        <p data-i18n="search.description">
+          Search through thousands of games and discover your next favorite universe.
+        </p>
+      </div>
+      <form class="search-box" id="searchForm">
+        <input
+          type="text"
+          id="searchInput"
+          data-i18n-placeholder="search.placeholder"
+          placeholder="Search games, genres, studios..."
+        />
+        <button
+          type="submit"
+          data-i18n="search.button"
+        >
+          Search
+        </button>
+      </form>
+    </section>
+    <section class="games-section" id="trending">
+      <div class="section-header">
+        <div>
+          <span
+            class="eyebrow"
+            data-i18n="trending.eyebrow"
+          >
+            Trending Now
+          </span>
+          <h2 data-i18n="trending.title">
+            Popular universes
+          </h2>
+        </div>
+        <a
+          href="#"
+          class="section-link"
+          data-i18n="trending.link"
+        >
+          View all
+        </a>
+      </div>
+      <div class="games-grid" id="gamesGrid">
+        <div class="game-card" style="--game-image: url('https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80')">
+  <div class="game-card-content">
+    <span>Action RPG</span>
+    <h3>Elden Ring</h3>
+    <p>Rating 4.7 • PC, PS5, Xbox</p>
+  </div>
+</div>
+      </div>
+    </section>
+    <section class="categories-section">
+      <div class="section-header">
+        <div>
+          <span
+            class="eyebrow"
+            data-i18n="categories.eyebrow"
+          >
+            Categories
+          </span>
+          <h2 data-i18n="categories.title">
+            Explore by genre
+          </h2>
+        </div>
+      </div>
+      <div class="categories-grid">
+        <button class="category-card">Action</button>
+        <button class="category-card">Adventure</button>
+        <button class="category-card">RPG</button>
+        <button class="category-card">Indie</button>
+        <button class="category-card">Shooter</button>
+        <button class="category-card">Strategy</button>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <p data-i18n="footer.text">
+      © 2026 Quest Games. Built by Kaio Henrique.
+    </p>
+  </footer>
+  <script src="./js/i18n.js"></script>
+  <script src="./js/api.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

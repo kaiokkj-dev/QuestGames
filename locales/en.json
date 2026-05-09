@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "trending": "Trending",
+    "explore": "Explore",
+    "favorites": "Favorites",
+    "button": "Explore Now"
+  },
+  "hero": {
+    "eyebrow": "Gaming Discovery Platform",
+    "title": "Discover new worlds before everyone else.",
+    "description": "Explore trending games, hidden gems, screenshots, ratings and your personal favorites in one cinematic experience.",
+    "primaryButton": "Start Exploring",
+    "secondaryButton": "View Trending"
+  },
+  "featured": {
+    "label": "Featured Game",
+    "genre": "Open-world RPG • Action • Sci-fi",
+    "rating": "Rating",
+    "players": "Players",
+    "platform": "Platform"
+  },
+  "search": {
+    "eyebrow": "Explore",
+    "title": "Find your next game",
+    "description": "Search through thousands of games and discover your next favorite universe.",
+    "placeholder": "Search games, genres, studios...",
+    "button": "Search"
+  },
+  "trending": {
+    "eyebrow": "Trending Now",
+    "title": "Popular universes",
+    "link": "View all"
+  },
+  "categories": {
+    "eyebrow": "Categories",
+    "title": "Explore by genre",
+    "action": "Action",
+    "adventure": "Adventure",
+    "rpg": "RPG",
+    "indie": "Indie",
+    "shooter": "Shooter",
+    "strategy": "Strategy"
+  },
+  "footer": {
+    "text": "© 2026 Quest Games. Built by Kaio Henrique."
+  }
+}

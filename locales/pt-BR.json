@@ -1,0 +1,47 @@
+{
+  "nav": {
+    "trending": "Em alta",
+    "explore": "Explorar",
+    "favorites": "Favoritos",
+    "button": "Explorar agora"
+  },
+  "hero": {
+    "eyebrow": "Plataforma de descoberta de jogos",
+    "title": "Descubra novos mundos antes de todo mundo.",
+    "description": "Explore jogos em alta, joias escondidas, capturas de tela, avaliações e seus favoritos em uma experiência cinematográfica.",
+    "primaryButton": "Começar a explorar",
+    "secondaryButton": "Ver em alta"
+  },
+  "featured": {
+    "label": "Jogo em destaque",
+    "genre": "RPG de mundo aberto • Ação • Sci-fi",
+    "rating": "Avaliação",
+    "players": "Jogadores",
+    "platform": "Plataforma"
+  },
+  "search": {
+    "eyebrow": "Explorar",
+    "title": "Encontre seu próximo jogo",
+    "description": "Pesquise entre milhares de jogos e descubra seu próximo universo favorito.",
+    "placeholder": "Pesquisar jogos, gêneros, estúdios...",
+    "button": "Pesquisar"
+  },
+  "trending": {
+    "eyebrow": "Em alta agora",
+    "title": "Universos populares",
+    "link": "Ver tudo"
+  },
+  "categories": {
+    "eyebrow": "Categorias",
+    "title": "Explore por gênero",
+    "action": "Ação",
+    "adventure": "Aventura",
+    "rpg": "RPG",
+    "indie": "Indie",
+    "shooter": "Tiro",
+    "strategy": "Estratégia"
+  },
+  "footer": {
+    "text": "© 2026 Quest Games. Criado por Kaio Henrique."
+  }
+}
