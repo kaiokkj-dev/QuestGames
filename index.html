@@ -42,15 +42,16 @@
 </header>
 <div class="mobile-menu" id="mobileMenu">
   <button class="close-menu" id="closeMenu">✕</button>
-
-  <span>MENU</span>
-
-  <a href="#trending">Em alta</a>
-  <a href="#explore">Explorar</a>
-  <a href="./favorites.html">Favoritos</a>
-
-  <a href="#explore" class="mobile-menu-button">
-    Explorar agora
+  <span data-i18n="mobile.menu">MENU</span>
+  <div class="mobile-language-switcher">
+    <button data-lang="en">EN</button>
+    <button data-lang="pt-BR">PT</button>
+  </div>
+  <a href="#trending" data-i18n="nav.trending">Trending</a>
+  <a href="#explore" data-i18n="nav.explore">Explore</a>
+  <a href="./favorites.html" data-i18n="nav.favorites">Favorites</a>
+  <a href="#explore" class="mobile-menu-button" data-i18n="nav.button">
+    Explore Now
   </a>
 </div>
   <main>

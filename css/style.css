@@ -710,3 +710,18 @@ input:-webkit-autofill:focus {
   border: 1px solid var(--border);
   transition: background-color 5000s ease-in-out 0s;
 }
+
+.mobile-language-switcher {
+  display: flex;
+  gap: 10px;
+}
+
+.mobile-language-switcher button {
+  flex: 1;
+  padding: 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.08);
+  color: white;
+  border: 1px solid rgba(255,255,255,0.12);
+  font-weight: 700;
+}
