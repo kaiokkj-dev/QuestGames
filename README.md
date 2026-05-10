@@ -66,16 +66,6 @@ https://quest-games.vercel.app/
 
 ---
 
-## 📸 Screenshots
-
-### Desktop
-
-Adicione screenshots aqui depois:
-
-```txt
-/assets/screenshots/desktop.png
-```
-
 ### Mobile
 
 ```txt
@@ -88,9 +78,9 @@ Adicione screenshots aqui depois:
 
 Desenvolvido por Kaio Henrique.
 
-- Portfolio: https://SEU-LINK.com
-- LinkedIn: https://linkedin.com
-- GitHub: https://github.com
+- Portfolio: [kaiohenrique.dev](https://kaiohenrique.dev/)
+- LinkedIn: www.linkedin.com/in/kaiohenrique-dev
+- GitHub: https://github.com/kaiokkj-dev
 
 ---
 
