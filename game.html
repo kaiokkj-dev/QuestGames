@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quest Games</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/responsive.css" />
+</head>
+<body>
+  <main class="game-details-page">
+    <div class="game-banner" id="gameBanner"></div>
+    <div class="game-details-container">
+      <a href="./index.html" class="back-button">
+        ← Back
+      </a>
+      <div class="game-info">
+        <span id="gameGenre"></span>
+        <h1 id="gameTitle"></h1>
+        <p id="gameDescription"></p>
+        <div class="game-meta">
+          <div>
+            <strong>⭐ Rating</strong>
+            <span id="gameRating"></span>
+          </div>
+          <div>
+            <strong>📅 Released</strong>
+            <span id="gameReleased"></span>
+          </div>
+          <div>
+            <strong>🎮 Platforms</strong>
+            <span id="gamePlatforms"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./js/api.js"></script>
+  <script src="./js/game.js"></script>
+</body>
+</html>
