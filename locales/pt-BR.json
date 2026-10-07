@@ -2,7 +2,7 @@
   "nav": {
     "trending": "Em alta",
     "explore": "Explorar",
-    "favorites": "Favoritos",
+    "favorites": "Minha biblioteca",
     "button": "Explorar agora"
   },
   "hero": {
@@ -17,7 +17,10 @@
     "genre": "RPG de mundo aberto • Ação • Sci-fi",
     "rating": "Avaliação",
     "players": "Jogadores",
-    "platform": "Plataforma"
+    "platform": "Plataforma",
+    "loading": "Carregando destaque…",
+    "unavailable": "Destaque indisponível",
+    "wait": "Buscando informações do jogo."
   },
   "search": {
     "eyebrow": "Explorar",
@@ -28,8 +31,9 @@
   },
   "trending": {
     "eyebrow": "Em alta agora",
-    "title": "Universos populares",
-    "link": "Ver tudo"
+    "title": "Em alta na Steam",
+    "link": "Ver tudo",
+    "source": "Seleção dos mais jogados da Steam · 7 de outubro de 2026"
   },
   "categories": {
     "eyebrow": "Categorias",
@@ -42,6 +46,32 @@
     "strategy": "Estratégia"
   },
   "footer": {
-    "text": "© 2026 Quest Games. Criado por Kaio Henrique."
+    "text": "© 2026 Quest Games. Criado por Kaio Henrique.",
+    "credit": "Dados e imagens dos jogos:"
+  },
+  "library": {
+    "status": "Na minha biblioteca",
+    "none": "Não salvo",
+    "want": "Quero jogar",
+    "playing": "Jogando",
+    "played": "Já joguei",
+    "details": "Ver detalhes completos ↗",
+    "title": "Sua biblioteca de jogos",
+    "description": "Seus favoritos e próximas aventuras em um só lugar.",
+    "all": "Todos",
+    "favorites": "Favoritos",
+    "search": "Buscar na biblioteca",
+    "empty": "Nenhum jogo nesta coleção ainda.",
+    "remove": "Remover da biblioteca",
+    "home": "Descobrir jogos"
+  },
+  "picker": {
+    "eyebrow": "Sua próxima aventura",
+    "title": "Na dúvida do que jogar?",
+    "description": "Sorteie um jogo da sua lista Quero jogar.",
+    "button": "Sortear um jogo",
+    "again": "Sortear novamente",
+    "result": "Seu próximo jogo",
+    "details": "Ver detalhes do jogo"
   }
 }

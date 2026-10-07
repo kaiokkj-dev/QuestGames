@@ -20,8 +20,18 @@ async function setLanguage(language) {
         element.textContent = translation;
       }
     });
+    document.querySelectorAll("[data-i18n-placeholder]").forEach((element) => {
+      const translation = getNestedTranslation(translations, element.dataset.i18nPlaceholder);
+      if (translation) element.placeholder = translation;
+    });
+    document.querySelectorAll("[data-lang]").forEach((button) => {
+      const active = button.dataset.lang === language;
+      button.classList.toggle("active", active);
+      button.setAttribute("aria-pressed", String(active));
+    });
     localStorage.setItem("nebula-language", language);
     document.documentElement.lang = language;
+    document.dispatchEvent(new Event("quest-language-change"));
   } catch (error) {
     console.error(error);
   }

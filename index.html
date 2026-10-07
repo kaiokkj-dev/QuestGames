@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Quest Games</title>
-  <link rel="icon" type="image/icon" href="assets/fav.png ">
+  <link rel="icon" type="image/icon" href="assets/fav.png">
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/responsive.css" />
 </head>
@@ -13,16 +13,16 @@
 <header class="header">
   <nav class="navbar">
     <a href="./index.html" class="logo">
-      
+
         <div class="logo-text">
     <strong>Quest</strong>
     <span>Games</span>
   </div>
 </a>
     <ul class="nav-links">
-      <li><a href="#trending" data-i18n="nav.trending">Trending</a></li>
-      <li><a href="#explore" data-i18n="nav.explore">Explore</a></li>
-      <li><a href="./favorites.html" data-i18n="nav.favorites">Favorites</a></li>
+      <li><a href="#trending"><span class="icon" data-icon="flame" aria-hidden="true"></span><span data-i18n="nav.trending">Trending</span></a></li>
+      <li><a href="#explore"><span class="icon" data-icon="compass" aria-hidden="true"></span><span data-i18n="nav.explore">Explore</span></a></li>
+      <li><a href="./favorites.html"><span class="icon" data-icon="library" aria-hidden="true"></span><span data-i18n="nav.favorites">Favorites</span></a></li>
     </ul>
 <div class="nav-right">
   <div class="language-switcher">
@@ -30,29 +30,23 @@
     <button data-lang="pt-BR">PT</button>
   </div>
 
-  <a href="#explore" class="nav-button" data-i18n="nav.button">
-    Explore Now
-  </a>
+  <a href="#explore" class="nav-button"><span class="icon" data-icon="arrow-right" aria-hidden="true"></span><span data-i18n="nav.button">Explore Now</span></a>
 </div>
 
-<button class="menu-button" id="menuButton" aria-label="Open menu">
-  ☰
-</button>
+<button class="menu-button" id="menuButton" aria-label="Open menu"><span class="icon" data-icon="menu" aria-hidden="true"></span></button>
   </nav>
 </header>
 <div class="mobile-menu" id="mobileMenu">
-  <button class="close-menu" id="closeMenu">✕</button>
+  <button class="close-menu" id="closeMenu" aria-label="Close menu"><span class="icon" data-icon="x" aria-hidden="true"></span></button>
   <span data-i18n="mobile.menu">MENU</span>
   <div class="mobile-language-switcher">
     <button data-lang="en">EN</button>
     <button data-lang="pt-BR">PT</button>
   </div>
-  <a href="#trending" data-i18n="nav.trending">Trending</a>
-  <a href="#explore" data-i18n="nav.explore">Explore</a>
-  <a href="./favorites.html" data-i18n="nav.favorites">Favorites</a>
-  <a href="#explore" class="mobile-menu-button" data-i18n="nav.button">
-    Explore Now
-  </a>
+  <a href="#trending"><span class="icon" data-icon="flame" aria-hidden="true"></span><span data-i18n="nav.trending">Trending</span></a>
+  <a href="#explore"><span class="icon" data-icon="compass" aria-hidden="true"></span><span data-i18n="nav.explore">Explore</span></a>
+  <a href="./favorites.html"><span class="icon" data-icon="library" aria-hidden="true"></span><span data-i18n="nav.favorites">Favorites</span></a>
+  <a href="#explore" class="mobile-menu-button"><span class="icon" data-icon="arrow-right" aria-hidden="true"></span><span data-i18n="nav.button">Explore Now</span></a>
 </div>
   <main>
     <section class="hero">
@@ -74,39 +68,35 @@
           <a
             href="#explore"
             class="primary-button"
-            data-i18n="hero.primaryButton"
-          >
-            Start Exploring
-          </a>
+
+          ><span class="icon" data-icon="compass" aria-hidden="true"></span><span data-i18n="hero.primaryButton">Start Exploring</span></a>
           <a
             href="#trending"
             class="secondary-button"
-            data-i18n="hero.secondaryButton"
-          >
-            View Trending
-          </a>
+
+          ><span class="icon" data-icon="flame" aria-hidden="true"></span><span data-i18n="hero.secondaryButton">View Trending</span></a>
         </div>
       </div>
-      <div class="hero-card" id="featuredCard">
+      <div class="hero-card" id="featuredCard" aria-busy="true">
         <div class="hero-card-overlay"></div>
         <div class="hero-card-content">
           <span data-i18n="featured.label">
             Featured Game
           </span>
-          <h2 id="featuredTitle">Cyberpunk 2077</h2>
-          <p id="featuredGenre">Open-world RPG • Action • Sci-fi</p>
+          <h2 id="featuredTitle" data-i18n="featured.loading">Loading featured game…</h2>
+          <p id="featuredGenre" data-i18n="featured.wait">Fetching game information.</p>
 <div class="hero-stats">
   <div>
-    <strong id="featuredRating">4.5</strong>
-    <span>Rating</span>
+    <strong id="featuredRating">—</strong>
+    <span data-i18n="featured.rating">Rating</span>
   </div>
   <div>
-    <strong id="featuredMetacritic">92</strong>
+    <strong id="featuredMetacritic">—</strong>
     <span>Metacritic</span>
   </div>
   <div>
-    <strong id="featuredPlatform">PC</strong>
-    <span>Platform</span>
+    <strong id="featuredPlatform">—</strong>
+    <span data-i18n="featured.platform">Platform</span>
   </div>
 </div>
         </div>
@@ -138,10 +128,8 @@
         />
         <button
           type="submit"
-          data-i18n="search.button"
-        >
-          Search
-        </button>
+
+        ><span class="icon" data-icon="search" aria-hidden="true"></span><span data-i18n="search.button">Search</span></button>
       </form>
     </section>
     <section class="games-section" id="trending">
@@ -154,13 +142,12 @@
             Trending Now
           </span>
           <h2 data-i18n="trending.title">
-            Popular universes
+            Popular on Steam
           </h2>
         </div>
       </div>
-      <div class="games-grid" id="gamesGrid">
-</div>
-      </div>
+      <p class="trending-source"><a href="https://store.steampowered.com/charts/mostplayed" target="_blank" rel="noopener noreferrer" data-i18n="trending.source">Selection from Steam Most Played · October 7, 2026</a></p>
+      <div class="games-grid" id="gamesGrid" aria-live="polite"></div>
     </section>
     <section class="categories-section">
       <div class="section-header">
@@ -177,12 +164,12 @@
         </div>
       </div>
       <div class="categories-grid">
-<button class="category-card" data-genre="action">Action</button>
-<button class="category-card" data-genre="adventure">Adventure</button>
-<button class="category-card" data-genre="role-playing-games-rpg">RPG</button>
-<button class="category-card" data-genre="indie">Indie</button>
-<button class="category-card" data-genre="shooter">Shooter</button>
-<button class="category-card" data-genre="strategy">Strategy</button>
+<button class="category-card" data-genre="action"><span class="icon" data-icon="swords" aria-hidden="true"></span><span data-i18n="categories.action">Action</span></button>
+<button class="category-card" data-genre="adventure"><span class="icon" data-icon="map" aria-hidden="true"></span><span data-i18n="categories.adventure">Adventure</span></button>
+<button class="category-card" data-genre="role-playing-games-rpg"><span class="icon" data-icon="wand-sparkles" aria-hidden="true"></span><span data-i18n="categories.rpg">RPG</span></button>
+<button class="category-card" data-genre="indie"><span class="icon" data-icon="sparkles" aria-hidden="true"></span><span data-i18n="categories.indie">Indie</span></button>
+<button class="category-card" data-genre="shooter"><span class="icon" data-icon="crosshair" aria-hidden="true"></span><span data-i18n="categories.shooter">Shooter</span></button>
+<button class="category-card" data-genre="strategy"><span class="icon" data-icon="brain" aria-hidden="true"></span><span data-i18n="categories.strategy">Strategy</span></button>
       </div>
     </section>
   </main>
@@ -198,25 +185,37 @@
       Kaio Henrique
     </a>
   </p>
+<p class="data-credit"><span data-i18n="footer.credit">Game data and images:</span> <a href="https://rawg.io/" target="_blank" rel="noopener noreferrer">RAWG</a></p>
 </footer>
-      <div class="game-modal" id="gameModal">
+      <div class="game-modal" id="gameModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
   <div class="game-modal-content">
-    <button class="close-modal" id="closeModal">
-      ✕
-    </button>
+    <button class="close-modal" id="closeModal" aria-label="Close"><span class="icon" data-icon="x" aria-hidden="true"></span></button>
     <div class="modal-banner" id="modalBanner"></div>
     <div class="modal-info">
       <span id="modalGenre"></span>
       <h2 id="modalTitle"></h2>
       <p id="modalDescription"></p>
+      <div class="library-actions">
+        <label for="libraryStatus" data-i18n="library.status">Na minha biblioteca</label>
+        <select id="libraryStatus">
+          <option value="" data-i18n="library.none">Não salvo</option>
+          <option value="want" data-i18n="library.want">Quero jogar</option>
+          <option value="playing" data-i18n="library.playing">Jogando</option>
+          <option value="played" data-i18n="library.played">Já joguei</option>
+        </select>
+        <a id="modalDetailsLink" class="secondary-button"><span class="icon" data-icon="external-link" aria-hidden="true"></span><span data-i18n="library.details">Ver detalhes completos</span></a>
+        <p id="libraryFeedback" role="status" aria-live="polite"></p>
+      </div>
       <div class="modal-meta">
         <span id="modalRating"></span>
         <span id="modalReleased"></span>
       </div>
     </div>
   </div>
+  </div>
   <script src="./js/i18n.js"></script>
   <script src="./js/api.js"></script>
+  <script src="./js/library.js"></script>
   <script src="./js/main.js"></script>
 </body>
 </html>

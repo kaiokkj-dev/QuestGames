@@ -2,7 +2,7 @@
   "nav": {
     "trending": "Trending",
     "explore": "Explore",
-    "favorites": "Favorites",
+    "favorites": "My library",
     "button": "Explore Now"
   },
   "hero": {
@@ -17,7 +17,10 @@
     "genre": "Open-world RPG • Action • Sci-fi",
     "rating": "Rating",
     "players": "Players",
-    "platform": "Platform"
+    "platform": "Platform",
+    "loading": "Loading featured game…",
+    "unavailable": "Featured game unavailable",
+    "wait": "Fetching game information."
   },
   "search": {
     "eyebrow": "Explore",
@@ -28,8 +31,9 @@
   },
   "trending": {
     "eyebrow": "Trending Now",
-    "title": "Popular universes",
-    "link": "View all"
+    "title": "Popular on Steam",
+    "link": "View all",
+    "source": "Selection from Steam Most Played · October 7, 2026"
   },
   "categories": {
     "eyebrow": "Categories",
@@ -42,6 +46,32 @@
     "strategy": "Strategy"
   },
   "footer": {
-    "text": "© 2026 Quest Games. Built by Kaio Henrique."
+    "text": "© 2026 Quest Games. Built by Kaio Henrique.",
+    "credit": "Game data and images:"
+  },
+  "library": {
+    "status": "In my library",
+    "none": "Not saved",
+    "want": "Want to play",
+    "playing": "Playing",
+    "played": "Played",
+    "details": "Full details ↗",
+    "title": "Your game library",
+    "description": "Your favorites and next adventures, in one place.",
+    "all": "All",
+    "favorites": "Favorites",
+    "search": "Search your library",
+    "empty": "No games in this collection yet.",
+    "remove": "Remove from library",
+    "home": "Discover games"
+  },
+  "picker": {
+    "eyebrow": "Your next adventure",
+    "title": "Not sure what to play?",
+    "description": "Pick a random game from your Want to play list.",
+    "button": "Pick a game",
+    "again": "Pick another",
+    "result": "Your next game",
+    "details": "View game details"
   }
 }

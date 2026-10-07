@@ -1,34 +1,28 @@
-const gameModal = document.getElementById("gameModal");
-const closeModal = document.getElementById("closeModal");
+const gameTitle = document.getElementById("gameTitle");
 
-const modalBanner = document.getElementById("modalBanner");
-const modalTitle = document.getElementById("modalTitle");
-const modalDescription = document.getElementById("modalDescription");
-const modalGenre = document.getElementById("modalGenre");
-const modalRating = document.getElementById("modalRating");
-const modalReleased = document.getElementById("modalReleased");
-
-function openGameModal(game) {
-  gameModal.classList.add("active");
-
-  modalBanner.style.backgroundImage =
-    `url(${game.background_image})`;
-
-  modalTitle.textContent = game.name;
-
-  modalDescription.innerHTML =
-    game.description_raw.slice(0, 300);
-
-  modalGenre.textContent =
-    game.genres.map(g => g.name).join(", ");
-
-  modalRating.textContent =
-    `⭐ ${game.rating}`;
-
-  modalReleased.textContent =
-    `📅 ${game.released}`;
+async function displayGameDetails() {
+  const id = new URLSearchParams(window.location.search).get("id");
+  if (!id || !/^\d+$/.test(id)) {
+    gameTitle.textContent = "Selecione um jogo para ver os detalhes.";
+    return;
+  }
+  gameTitle.textContent = "Carregando…";
+  try {
+    const game = await getGameDetails(id);
+    document.title = `${game.name} • Quest Games`;
+    gameTitle.textContent = game.name;
+    if (game.background_image) {
+      document.getElementById("gameBanner").style.backgroundImage = `url(${game.background_image})`;
+    }
+    document.getElementById("gameGenre").textContent = game.genres?.map(genre => genre.name).join(" • ") || "";
+    document.getElementById("gameDescription").textContent = game.description_raw || "Descrição indisponível.";
+    document.getElementById("gameRating").textContent = game.rating ?? "—";
+    document.getElementById("gameReleased").textContent = game.released || "—";
+    document.getElementById("gamePlatforms").textContent = game.platforms?.map(item => item.platform.name).join(", ") || "—";
+  } catch (error) {
+    gameTitle.textContent = "Não foi possível carregar o jogo. Tente novamente.";
+    console.error(error);
+  }
 }
 
-closeModal.addEventListener("click", () => {
-  gameModal.classList.remove("active");
-});
+displayGameDetails();

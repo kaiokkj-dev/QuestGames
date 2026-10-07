@@ -3,43 +3,67 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Favorites • Quest Games</title>
+  <title>Library • Quest Games</title>
+  <link rel="icon" href="./assets/fav.png" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/responsive.css" />
 </head>
 <body>
+  <div class="page-bg"></div>
   <header class="header">
     <nav class="navbar">
-      <a href="./index.html" class="logo">
-        <div class="logo-text">
-          <strong>Quest</strong>
-          <span>Games</span>
-        </div>
-      </a>
-      <ul class="nav-links">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./favorites.html">Favorites</a></li>
-      </ul>
+      <a href="./index.html" class="logo"><div class="logo-text"><strong>Quest</strong><span>Games</span></div></a>
+      <div class="language-switcher"><button data-lang="en">EN</button><button data-lang="pt-BR">PT</button></div>
     </nav>
   </header>
   <main class="favorites-page">
     <section class="favorites-hero">
-      <span class="eyebrow">
-        Your Library
-      </span>
-      <h1>
-        Favorite Games
-      </h1>
-      <p>
-        All your saved games in one place.
-      </p>
+      <a href="./index.html" class="back-button"><span class="icon" data-icon="arrow-left" aria-hidden="true"></span><span data-i18n="library.home">Discover games</span></a>
+      <h1 data-i18n="library.title">Your game library</h1>
+      <p data-i18n="library.description">Your favorites and next adventures, in one place.</p>
     </section>
-    <section class="games-section">
-      <div class="games-grid" id="favoritesGrid">
-        
+    <section class="game-picker" aria-labelledby="pickerTitle">
+      <div class="picker-intro">
+        <span class="eyebrow" data-i18n="picker.eyebrow">Your next adventure</span>
+        <h2 id="pickerTitle" data-i18n="picker.title">Not sure what to play?</h2>
+        <p data-i18n="picker.description">Pick a random game from your Want to play list.</p>
       </div>
+      <button id="pickGame" class="primary-button" type="button">
+        <span class="icon" data-icon="sparkles" aria-hidden="true"></span>
+        <span id="pickGameLabel" data-i18n="picker.button">Pick a game</span>
+      </button>
+      <p id="pickerNotice" class="picker-notice" role="status" aria-live="polite"></p>
+      <article id="pickerResult" class="picker-result" hidden>
+        <img id="pickerImage" alt="" loading="lazy" />
+        <div class="picker-result-info">
+          <span class="eyebrow" data-i18n="picker.result">Your next game</span>
+          <h3 id="pickerGameTitle"></h3>
+          <p id="pickerGameMeta"></p>
+          <a id="pickerDetails" class="secondary-button">
+            <span class="icon" data-icon="external-link" aria-hidden="true"></span>
+            <span data-i18n="picker.details">View game details</span>
+          </a>
+        </div>
+      </article>
+    </section>
+    <section class="games-section" aria-label="Library">
+      <div class="library-tabs" role="group" aria-label="Collections">
+        <button data-filter="all" aria-pressed="true"><span class="icon" data-icon="layout-grid" aria-hidden="true"></span><span data-i18n="library.all">All</span></button>
+        <button data-filter="favorites" aria-pressed="false"><span class="icon" data-icon="heart" aria-hidden="true"></span><span data-i18n="library.favorites">Favorites</span></button>
+        <button data-filter="want" aria-pressed="false"><span class="icon" data-icon="bookmark" aria-hidden="true"></span><span data-i18n="library.want">Want to play</span></button>
+        <button data-filter="playing" aria-pressed="false"><span class="icon" data-icon="play" aria-hidden="true"></span><span data-i18n="library.playing">Playing</span></button>
+        <button data-filter="played" aria-pressed="false"><span class="icon" data-icon="circle-check" aria-hidden="true"></span><span data-i18n="library.played">Played</span></button>
+      </div>
+      <label for="librarySearch" class="library-search-label" data-i18n="library.search">Search your library</label>
+      <input id="librarySearch" type="search" class="library-search" data-i18n-placeholder="library.search" placeholder="Search your library" />
+      <p id="libraryCount" class="library-count" role="status"></p>
+      <div class="games-grid" id="favoritesGrid"></div>
     </section>
   </main>
+  <footer class="footer"><p class="data-credit"><span data-i18n="footer.credit">Game data and images:</span> <a href="https://rawg.io/" target="_blank" rel="noopener noreferrer">RAWG</a></p></footer>
+  <script src="./js/i18n.js"></script>
+  <script src="./js/library.js"></script>
   <script src="./js/favorites.js"></script>
+  <script src="./js/picker.js"></script>
 </body>
 </html>

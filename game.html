@@ -12,7 +12,7 @@
     <div class="game-banner" id="gameBanner"></div>
     <div class="game-details-container">
       <a href="./index.html" class="back-button">
-        ← Back
+        <span class="icon" data-icon="arrow-left" aria-hidden="true"></span> Back
       </a>
       <div class="game-info">
         <span id="gameGenre"></span>
@@ -20,21 +20,22 @@
         <p id="gameDescription"></p>
         <div class="game-meta">
           <div>
-            <strong>⭐ Rating</strong>
+            <strong><span class="icon" data-icon="star" aria-hidden="true"></span> Rating</strong>
             <span id="gameRating"></span>
           </div>
           <div>
-            <strong>📅 Released</strong>
+            <strong><span class="icon" data-icon="calendar-days" aria-hidden="true"></span> Released</strong>
             <span id="gameReleased"></span>
           </div>
           <div>
-            <strong>🎮 Platforms</strong>
+            <strong><span class="icon" data-icon="gamepad-2" aria-hidden="true"></span> Platforms</strong>
             <span id="gamePlatforms"></span>
           </div>
         </div>
       </div>
     </div>
   </main>
+  <footer class="footer"><p class="data-credit"><span data-i18n="footer.credit">Game data and images:</span> <a href="https://rawg.io/" target="_blank" rel="noopener noreferrer">RAWG</a></p></footer>
   <script src="./js/api.js"></script>
   <script src="./js/game.js"></script>
 </body>
